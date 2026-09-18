@@ -1,11 +1,7 @@
-# EXPERIMENT--01-ALP-FOR-8086
-Name : GOKUL V E
-Roll no: 212224220029
-Date of experiment :25.07.2026
+## EXPERIMENT  01  ALP on fundamental arithmetic and logical operations 8086
 
-
-
-
+Name :GOKUL V E 
+Roll no 212224220029
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
@@ -76,62 +72,78 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations
+~~~
+org 100h
 
-## Addition  of 16 bit ALP 
+mov AX,4325H
+mov BX,2233H
+
+add AX,BX  
+mov [2000H],AX
+mov AX,4325H 
+
+sub AX,BX
+mov [2002H],AX
+mov AX,4325H
+mov CX,2525H
+
+mul CX
+mov [2004H],AX
+mov AX,2325H
+mov CL,05H
+
+div CL
+mov [2006H],AX
+
+
+ret
+~~~
 ```
-mov AX,512AH
-mov BX,7394H
-SUB AX,BX
-mov [3001H],AX 
-HLT
+org 100h
+
+mov BX,3465H;
+mov AX,7594H;
+AND Ax,BX;
+MOV [2000H],AX;
+
+
+MOV AX,4754H;
+MOV CX,3932H;
+AND AX,CX; 
+NOT CX
+MOV [2002H],AX;
+
+MOV AX,4732H;
+MOV BX,1124H;
+OR  AX,BX;
+MOV [2004],AX;
+
+MOV AX,8763H;
+MOV BX,7654H;
+OR  AX,BX;
+NOT BX;
+MOV [2006H],AX;
+
+hlt
 ```
 
 
-## Output  
- <img width="1920" height="1080" alt="Screenshot 2026-07-25 103101" src="https://github.com/user-attachments/assets/a49d57e8-0c17-4bb3-9a89-ee67b1b70a8e" />
-
-## Subtraction   of 16 bit numbers  ALP 
-```
-mov AX,512AH
-mov BX,7394H
-SUB AX,BX
-mov [3002H],AX 
-HLT
- ```
-## Output  
-<img width="1920" height="1080" alt="Screenshot 2026-07-25 103536" src="https://github.com/user-attachments/assets/19acb2b9-2781-41bf-acc3-b11d7dca27ab" />
-
-## Multiplication alp 
-```
-mov AX,512AH
-mov BX,7394H
-MUL BX
-mov [3003H],AX 
-mov [3004H],dx
-HLT
-```
- ## Output  
-<img width="1920" height="1080" alt="Screenshot 2026-07-25 102344" src="https://github.com/user-attachments/assets/837ada9e-94ef-4452-8eb3-27f6ca2ec4cb" />
 
 
-## Division alp 
-```
-mov AX,512AH
-mov BX,7394H
-DIV BX
-mov [3006H],AX 
-mov [3007H],DX
-HLT
-```
+## Output
+<img width="1918" height="1198" alt="image" src="https://github.com/user-attachments/assets/cc350656-9d80-484d-920d-f6c63b7713bb" />
+<img width="1918" height="1198" alt="image" src="https://github.com/user-attachments/assets/8b7833c0-aea9-4f74-9462-5f1eb825286e" />
+<img width="1918" height="1198" alt="image" src="https://github.com/user-attachments/assets/464bed0e-aabe-4d43-9ff0-e9205436ea3f" />
 
-## Output  
 
-<img width="1920" height="1080" alt="Screenshot 2026-07-25 104458" src="https://github.com/user-attachments/assets/03dcacff-a37f-49b8-96d1-49e40a5dbe61" />
+<img width="1918" height="1198" alt="Screenshot 2026-07-23 083954" src="https://github.com/user-attachments/assets/fe66abbc-9367-4eef-a652-b261932c4695" />
+<img width="1918" height="1198" alt="Screenshot 2026-07-23 084012" src="https://github.com/user-attachments/assets/22863f25-afbb-4414-ad61-24d116e6eecc" />
+<img width="1918" height="1198" alt="Screenshot 2026-07-23 084022" src="https://github.com/user-attachments/assets/cbb259d1-5dc0-4230-94d6-ef7d3595a50c" />
+<img width="1918" height="1198" alt="Screenshot 2026-07-23 084037" src="https://github.com/user-attachments/assets/b2b31788-cbc2-45c8-ad71-f27c49c9ce0c" />
 
-##
 
 ## Result :
- 
+ The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
 
 
 
